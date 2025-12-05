@@ -8,7 +8,7 @@ def home(request):
 
 def mensagem(request):
     nome = 'Vinicius'
-    horario = datetime.now().hour
+    horario = 7
 
     if 5 <= horario < 12:
         mensagem = f'Bom dia!'
@@ -22,7 +22,7 @@ def saudacao(resquest, nome):
     mensagem = f'Olá {nome}, seja bem vindx ao meu site!'
     return HttpResponse(mensagem)
 
-def produtos(request, id_produto):
+"""def produtos(request, id_produto):
     produtos = {
         1: 'Notebook',
         2: 'Mouse',
@@ -34,8 +34,12 @@ def produtos(request, id_produto):
         return HttpResponse(mensagem)
     else:
         mensagem = f'Detalhes do produto: {produto}'
-        return HttpResponse(mensagem)
+        return HttpResponse(mensagem)"""
 
-def produtos2(request):
+def produtos(request):
     produtos = ['Notebook', 'Mouse', 'Fone', 'Mouse', 'Celular']
-    return render(produtos, 'produtos.hmtl', {'produtos':produtos})
+    return render(request, 'produtos.html', {'produtos':produtos})
+
+def index(request):
+    ola = "Olá herança!"
+    return render(request, 'index.html', {'ola': ola})

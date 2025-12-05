@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{& block title &} Minha Herança {& endblock &}</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #32A041 65%, rgba(255,0,0,0.1));
+            font-family: 'Chakra Petch', sans-serif;
+        }
+       <!--.login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 95%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .login-box img {
+            width: 80px; /* Ajuste o tamanho da imagem aqui */
+            margin-bottom: 20px;
+        }        
+        .login-box h1 {
+            margin-bottom: 20px;
+            color: #32A041;
+        }
+        .login-box form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-box input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-box button {
+            padding: 10px;
+            background-color: #32A041;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-box button:hover {
+            background-color: #28a035;
+        }
+        .forgot-password {
+            color: #32A041;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        } -->
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Herança</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy: 2025 site do Vinicius</p>
+    </footer>
+</body>
+</html>
