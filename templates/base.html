@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{& block title &} Minha Herança {& endblock &}</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #32A041 65%, rgba(255,0,0,0.1));
+            font-family: 'Chakra Petch', sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Herança</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy: 2025 site do Vinicius</p>
+    </footer>
+</body>
+</html>
